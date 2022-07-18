@@ -58,6 +58,11 @@ a{
     margin: 0 auto;
     background-color: var(--row-bg);
     padding: 3rem;
+    border-radius: .5rem;
+}
+
+.row-pad-t{
+    padding-top: 3rem;
 }
 
 /* Heading */
@@ -150,6 +155,17 @@ h4{
 }
 
 /* ==== Start Blog Section Design ==== */
+
+.blog-items{
+    margin-top: 3rem;
+}
+
+.blog-items .blogs{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 3rem;
+    margin-top: 3rem;
+}
 
 .blog-items .blogs .blog-info{
     display: flex;
