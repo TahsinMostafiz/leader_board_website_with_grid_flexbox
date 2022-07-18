@@ -149,7 +149,27 @@ h4{
     align-items: center;
 }
 
+/* ==== Start Blog Section Design ==== */
 
+.blog-items .blogs .blog-info{
+    display: flex;
+}
+
+.blog-items .blogs .blog-info img{
+    width: 17rem;
+    height: 10.17rem;
+    margin-right: 1.5rem;
+}
+
+.blog-items .blogs .blog-info .blog-title p{
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: var(--title-1);
+}
+
+.blog-items .blogs .blog-info .blog-title p span{
+    color: var(--span-1);
+}
 
 
 
