@@ -1,0 +1,156 @@
+/* =================== */
+/* ====== RESET ====== */
+/* =================== */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.5;
+}
+
+ul li{
+    list-style: none;
+    margin-right: 3rem;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* ====== Reusable Components ====== */
+
+/* ==== Color ==== */
+
+:root{
+    --container-bg : #F3F1FF;
+    --header-bg : #562EFF;
+    --header-items : #FFFFFF;
+    --row-bg : #FFFFFF;
+    --h2-color: #562EFF;
+    --h3-color : #1E1E1E;
+    --h4-color : #000000;
+    --title-1 : #ED6B4F;
+    --course-hours : #FF4A60;
+    --star-1 : #FFC014;
+    --star-2 : #AEAEAE;
+    --title-2: #562EFF;
+    --span-1: #9F9F9F;
+    --stroke : #D1D1D1;
+}
+
+.container{
+    max-width: 144rem;
+    margin: 0 auto;
+    background-color: var(--container-bg);
+}
+
+.row{
+    max-width: 90rem;
+    margin: 0 auto;
+    background-color: var(--row-bg);
+    padding: 3rem;
+}
+
+/* Heading */
+
+h2{
+    font-size: 2.4rem;
+    color: var(--h2-color);
+}
+
+h3{
+    font-size: 2rem;
+    color: var(--h3-color);
+}
+
+h4{
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--h4-color);
+    margin-left: 1.5rem;
+}
+
+.person-img{
+    width: 5rem;
+    height: 5rem;
+    cursor: pointer;
+}
+
+/* ==== Start Header Section Design ==== */
+
+.header-bg{
+    background-color: var(--header-bg);
+    padding: 1rem 0;
+}
+
+.header-row{
+    max-width: 90rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-row .logo-part {
+    display: flex;
+    align-items: center;
+}
+
+.header-row .logo-part img{
+    width: 3.5rem;
+    height: 4.5rem;
+    cursor: pointer;
+}
+
+.header-row .logo-part p a{
+    color: var(--header-items);
+    font-size: 2.4rem;
+    font-weight: 600;
+    margin-left: 1.5rem;
+}
+
+.header-row .menu-part{
+    display: flex;
+    align-items: center;
+}
+
+.header-row .menu-part nav ul{
+    display: flex;
+}
+
+.header-row .menu-part nav ul li a{
+    color: var(--header-items);
+    font-size: 1.6rem;
+}
+
+
+/* ==== Start Player and Blog Section Design ==== */
+
+
+.player-items .players {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 3em;
+    padding:3rem 0;
+    border-bottom: .1rem solid var(--stroke);
+
+}
+
+.player-items .players .players-info{
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+
+
