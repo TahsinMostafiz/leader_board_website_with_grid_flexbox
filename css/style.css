@@ -14,7 +14,11 @@ html{
 
 body{
     font-family: 'Poppins', sans-serif;
-    line-height: 1.5;
+    line-height: 1.4;
+}
+
+ul{
+    display: flex;
 }
 
 ul li{
@@ -39,12 +43,14 @@ a{
     --h3-color : #1E1E1E;
     --h4-color : #000000;
     --title-1 : #ED6B4F;
-    --course-hours : #FF4A60;
+    --course-hr : #FF4A60;
+    --course-hr-bg : #FEE5DF;
     --star-1 : #FFC014;
     --star-2 : #AEAEAE;
     --title-2: #562EFF;
     --span-1: #9F9F9F;
     --stroke : #D1D1D1;
+    --rating : #A2A2A2;
 }
 
 .container{
@@ -70,18 +76,26 @@ a{
 h2{
     font-size: 2.4rem;
     color: var(--h2-color);
+    font-weight: 500;
 }
 
 h3{
     font-size: 2rem;
     color: var(--h3-color);
+    font-weight: 600;
 }
 
 h4{
-    font-size: 1.8rem;
+    font-size: 1.7rem;
     font-weight: 600;
     color: var(--h4-color);
-    margin-left: 1.5rem;
+}
+
+h5{
+    color: var(--title-1);
+    font-size: 1.4rem;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
 }
 
 .person-img{
@@ -127,10 +141,6 @@ h4{
     align-items: center;
 }
 
-.header-row .menu-part nav ul{
-    display: flex;
-}
-
 .header-row .menu-part nav ul li a{
     color: var(--header-items);
     font-size: 1.6rem;
@@ -154,6 +164,10 @@ h4{
     align-items: center;
 }
 
+.player-items .players .players-info h4{
+    margin-left: 2rem;
+}
+
 /* ==== Start Blog Section Design ==== */
 
 .blog-items{
@@ -173,14 +187,18 @@ h4{
 
 .blog-items .blogs .blog-info img{
     width: 17rem;
-    height: 10.17rem;
+    height: 11.7rem;
     margin-right: 1.5rem;
+}
+.blog-items .blogs .blog-info h3{
+    margin-top: .5rem;
 }
 
 .blog-items .blogs .blog-info .blog-title p{
     font-size: 1.6rem;
     font-weight: 400;
-    color: var(--title-1);
+    color: var(--title-2);
+    margin-top: .5rem;
 }
 
 .blog-items .blogs .blog-info .blog-title p span{
@@ -188,5 +206,71 @@ h4{
 }
 
 
+/* ==== Start Course Section Design ==== */
+
+/* box-shadow: none|h-offset v-offset blur spread color |inset|initial|inherit; */
+
+.course-items .courses{
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.course-items .courses .course-card{
+    width: 26rem;
+    background-color: var(--row-bg);
+    box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, 5%);
+    border-radius: .5rem;
+    padding: 1.5rem;
+}
+
+.course-items .courses .course-card img{
+    width: 22.4rem;
+    height: 10.4rem;
+}
+
+.course-items .courses .course-card h4{
+    margin: .5rem 0;
+}
+
+.course-card .rating-block{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 1rem;
+    justify-content: space-between;
+}
+
+.course-card .rating-block .rating-stars{
+    display: flex;
+    align-items: center;
+}
+.course-card .rating-block .rating-stars ul li{
+    margin-right: .3rem;
+    color: var(--star-1);
+}
+.course-card .rating-block .rating-stars ul li i{
+    font-size: 1.3rem;
+}
+.course-card .rating-block .rating-stars ul li:last-child{
+    color: var(--star-2);
+}
+
+.course-card .rating-block .rating-stars span{
+    color: var(--rating);
+    font-size: 1.4rem;
+    margin-left: .5rem;
+}
+
+.course-card .rating-block .course-hours p{
+    font-size: 1.2rem;
+    color: var(--course-hr);
+    background: var(--course-hr-bg);
+    padding: .5rem 1rem;
+    border-radius: 2rem;
+    font-weight: 500;
+}
+.course-card .rating-block .course-hours p i{
+    margin-right: .3rem;
+}
 
 
